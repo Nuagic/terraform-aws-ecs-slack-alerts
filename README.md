@@ -6,7 +6,8 @@ Send notification to Slack for any ECS service deployment stage
 ```terraform
 module "ecs-slack" {
   source  = "Nuagic/ecs-slack-alerts/aws"
-  name = "mycluster"
+  version = "1.0.0"
+  name    = "mycluster"
   env     = "dev"
   webHook = "https://hooks.slack.com/services/XXXXXXXXXXXX/XXXXXXXXXX/XXXXXXXXXXXXXXX"
 }
