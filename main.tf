@@ -95,7 +95,7 @@ module "lambda" {
     }
   }
   environment_variables = {
-    SLACK_WEBHOOK = var.WebHook
+    SLACK_WEBHOOK = var.webHook
   }
 }
 
