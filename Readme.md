@@ -1,5 +1,7 @@
 # terraform-aws-ecs-slack-alerts
 
+Send notification to Slack for any ECS service deployment stage
+
 ## Usage 
 ```terraform
 module "ecs-slack" {
