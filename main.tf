@@ -86,7 +86,7 @@ module "lambda" {
   source_path                       = "${path.module}/lambda"
   create_package                    = true
   publish                           = true
-  cloudwatch_logs_retention_in_days = 7
+  cloudwatch_logs_retention_in_days = var.log_retention_in_days
   timeout                           = 5
   allowed_triggers = {
     EventBridge = {
